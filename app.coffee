@@ -14,7 +14,7 @@ dragMe = new TextLayer
 	height: 50
 	width: 300
 	borderWidth: 3
-	text: 'DRAG ME'
+	text: "I'M A DRAG"
 	textAlign: 'center'
 
 distanceBetween = (layerA, layerB) ->
