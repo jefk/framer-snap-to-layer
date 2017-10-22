@@ -21,6 +21,10 @@ distanceBetween = (layerA, layerB) ->
 	(layerA.midX - layerB.midX) ** 2 + (layerA.midY - layerB.midY) ** 2
 
 dragMe.draggable.enabled = true
+dragMe.draggable.momentumOptions =
+	friction: 10
+	tolerance: 0.1
+
 dragMe.onDragAnimationEnd ->
 	closestAnchor = anchors[0]
 	minDistance = distanceBetween dragMe, anchors[0]
